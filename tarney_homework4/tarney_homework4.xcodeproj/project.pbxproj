@@ -16,6 +16,8 @@
 		A1A852CE2069D975008B0AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A852CD2069D975008B0AC8 /* Assets.xcassets */; };
 		A1A852D12069D975008B0AC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A852CF2069D975008B0AC8 /* LaunchScreen.storyboard */; };
 		A1A852E32069DA35008B0AC8 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A852DF2069D9FA008B0AC8 /* ResearchKit.framework */; };
+		A1D8F31A2076F7370060A8A7 /* FluSurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D8F3192076F7370060A8A7 /* FluSurveyTask.swift */; };
+		A1D8F31F2077252A0060A8A7 /* CoughActiveTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D8F31E2077252A0060A8A7 /* CoughActiveTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A1A852D02069D975008B0AC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1A852D22069D975008B0AC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1A852D82069D9F9008B0AC8 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		A1D8F3192076F7370060A8A7 /* FluSurveyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluSurveyTask.swift; sourceTree = "<group>"; };
+		A1D8F31E2077252A0060A8A7 /* CoughActiveTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoughActiveTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 				A1A852D22069D975008B0AC8 /* Info.plist */,
 				A12FCB822075D52E00E931F3 /* ConsentTask.swift */,
 				A12FCB872075D53B00E931F3 /* ConsentDocument.swift */,
+				A1D8F3192076F7370060A8A7 /* FluSurveyTask.swift */,
+				A1D8F31E2077252A0060A8A7 /* CoughActiveTask.swift */,
 			);
 			path = tarney_homework4;
 			sourceTree = "<group>";
@@ -206,11 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D8F31A2076F7370060A8A7 /* FluSurveyTask.swift in Sources */,
 				A1A852C92069D975008B0AC8 /* ViewController.swift in Sources */,
 				A12FCB832075D52E00E931F3 /* ConsentTask.swift in Sources */,
 				A1A852C72069D975008B0AC8 /* AppDelegate.swift in Sources */,
 				A12FCB7F2072F14C00E931F3 /* VideoViewController.swift in Sources */,
 				A12FCB882075D53B00E931F3 /* ConsentDocument.swift in Sources */,
+				A1D8F31F2077252A0060A8A7 /* CoughActiveTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
