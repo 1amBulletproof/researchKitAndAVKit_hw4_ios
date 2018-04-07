@@ -17,6 +17,25 @@ public var FluSurveyTask: ORKOrderedTask {
     instructionStep.title = "Flu Survey"
     instructionStep.text = "Please answer all survey questions to the best of your ability."
     steps += [instructionStep]
+    
+    //Numeric Questions in Survey
+    let numbericOneToTenFormat = ORKNumericAnswerFormat(style: .integer, unit: "", minimum: 1, maximum: 10)
+    let numericTempFormat = ORKNumericAnswerFormat(style: .decimal, unit: "", minimum: 1, maximum: 120)
+    
+    //What is your current temperature? (numeric input)
+    let temperatureQuestionTitle = "What is your current temperature?"
+    let temperatureQuestionStep = ORKQuestionStep(identifier: "TemperatureQuestionStep", title: temperatureQuestionTitle, answer: numericTempFormat)
+    steps += [temperatureQuestionStep]
+    
+    //How are you feeling today, on a scale of 1-10? (lower number means you feel LESS well)
+    let feelingQuestionTitle = "How are you feeling today, on a scale of 1-10?"
+    let feelingQuestionStep = ORKQuestionStep(identifier: "FeelingQuestionStep", title: feelingQuestionTitle, answer: numbericOneToTenFormat)
+    steps += [feelingQuestionStep]
+    
+    //How sore is your body, on a scale of 1-10? (lower number means your feel LESS sore)
+    let soreQuestionTitle = "How sore is your body, on a scale of 1-10?"
+    let soreQuestionStep = ORKQuestionStep(identifier: "SoreQuestionStep", title: soreQuestionTitle, answer: numbericOneToTenFormat)
+    steps += [soreQuestionStep]
 
     //Text choices in survey
     let textChoices = [
@@ -44,13 +63,6 @@ public var FluSurveyTask: ORKOrderedTask {
     let sickQuestionTitle = "Do you think or feel-like you are sick?"
     let sickQuestionStep = ORKQuestionStep(identifier: "SickQuestionStep", title: sickQuestionTitle, answer: questionAnswerFormat)
     steps += [sickQuestionStep]
-    
-    //Numeric Questions in Survey
-    //What is your current temperature? (numeric input)
-    //How are you feeling today, on a scale of 1-10? (lower number means you feel LESS well)
-//    let feelingQuestionFormat = ORKNumericAnswerFormat.init(style: <#T##ORKNumericAnswerStyle#>, unit: <#T##String?#>, minimum: <#T##NSNumber?#>, maximum: <#T##NSNumber?#>)
-    
-    //How sore is your body, on a scale of 1-10? (lower number means your feel LESS sore)
     
     //summary step
     let summaryStep = ORKCompletionStep(identifier: "SummaryStep")

@@ -25,6 +25,8 @@ class VideoViewController: UIViewController, AVPlayerViewControllerDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Videos"
+        
         let startTime = CMTime(seconds: 5, preferredTimescale: 1)
         let startTimeVal = NSValue.init(time: startTime)
         

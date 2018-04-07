@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var coughTaskViewController:ORKTaskViewController!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Flu Study"
     }
 
     override func didReceiveMemoryWarning() {
